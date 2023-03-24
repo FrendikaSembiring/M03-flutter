@@ -97,16 +97,16 @@ class _MyHomePageState extends State<MyHomePage> {
           Row(children: [
             Icon(Icons.sort),
             Text('Keterangan'),
-            Container(
-              width: 200,
-              child: TextField(
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  hintText: 'Tambah Keterangan',
-                ),
+          ]),
+          Container(
+            width: 350,
+            child: TextField(
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                hintText: 'Tambah Keterangan',
               ),
             ),
-          ]),
+          ),
           Row(children: [
             Icon(Icons.calendar_month),
             Text('Tanggal Mulai'),
@@ -115,30 +115,40 @@ class _MyHomePageState extends State<MyHomePage> {
           ]),
           Row(children: [
             Container(
-              width: 250,
+              width: 100,
               child: TextField(
                 decoration: InputDecoration(
                   border: UnderlineInputBorder(),
-                  hintText: '20-03-2022          20-03-2022',
+                  hintText: '20-03-2022',
+                ),
+              ),
+            ),
+            Container(
+              width: 100,
+              child: TextField(
+                decoration: InputDecoration(
+                  border: UnderlineInputBorder(),
+                  hintText: '20-03-2022',
                 ),
               ),
             )
           ]),
           Container(
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  width: 130,
+                  width: 180,
                   child: OutlinedButton(
                     onPressed: () {},
                     child: Text('Batal'),
                   ),
                 ),
                 Container(
-                  width: 130,
+                  width: 180,
                   child: ElevatedButton(
                     onPressed: () {},
-                    child: Text('Batal'),
+                    child: Text('Simpan'),
                   ),
                 )
               ],

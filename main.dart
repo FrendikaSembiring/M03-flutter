@@ -108,12 +108,14 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           Row(children: [
+            Padding(padding: EdgeInsets.all(38)),
             Icon(Icons.calendar_month),
             Text('Tanggal Mulai'),
+            Padding(padding: EdgeInsets.all(20.0)),
             Icon(Icons.calendar_month),
             Text('Tanggal Selesai')
           ]),
-          Row(children: [
+          Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
             Container(
               width: 100,
               child: TextField(
